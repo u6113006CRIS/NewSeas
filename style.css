@@ -1,0 +1,588 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.social-icons a,
+.social-icons a i,
+.social-icons a svg {
+    color: white;
+    fill: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.navbar {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.navbar a:hover {
+    color: #0033a0;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    display: block;
+}
+
+.logo {
+    font-size: 30px;
+    color: #0033a0;
+    margin-right: auto;
+    flex-shrink: 0;
+}
+
+.hero {
+    width: 100%;
+    max-width: none;
+    min-height: calc(100vh - 110px);
+    margin: 0;
+
+    background-image:
+        linear-gradient(rgba(0, 30, 60, 0.15), rgba(0, 10, 30, 0.35)),
+        url("images/ocean.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    padding: 50px 5%;
+}
+
+.hero-lines {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+}
+.statistics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+
+    width: 100%;
+    max-width: 1200px;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.stat {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.stat h2 {
+    font-size: clamp(20px, 2vw, 30px);
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.white-line {
+    width: 160px;
+    max-width: 90%;
+    height: 2px;
+    background-color: white;
+    margin: 0 auto 15px;
+}
+
+.stat p {
+    font-size: clamp(14px, 1.2vw, 18px);
+    line-height: 1.5;
+}
+.hero-lines span {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+}
+.stat {
+    text-align: center;
+    color: white;
+    flex: 1;
+}
+
+.stat h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.stat span {
+    display: block;
+    width: 130px;
+    height: 3px;
+    background-color: white;
+    margin: 0 auto;
+}
+.hero-message {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    margin: 55px auto 10px;
+    padding: 0 20px;
+}
+
+.hero-message h2 {
+    font-size: clamp(18px, 2vw, 26px);
+    font-weight: bold;
+    line-height: 1.5;
+    color: white;
+}
+
+.introduction {
+    max-width: 1000px;
+
+    margin: 60px auto;
+
+    padding: 0 20px;
+
+    text-align: center;
+}
+
+.introduction p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.volunteer-section {
+    width: 100%;
+    max-width: 1100px;
+
+    min-height: 600px;
+
+    margin: 40px auto;
+
+    padding: 80px 20px;
+
+    background-color: #071c91;
+
+    text-align: center;
+    color: white;
+}
+
+.volunteer-section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+button {
+    background: transparent;
+    border: none;
+
+    color: white;
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+#requirements {
+    margin: 30px auto;
+    padding: 20px;
+
+    max-width: 500px;
+
+    background-color: #102db0;
+    border-radius: 10px;
+}
+
+#requirements h3 {
+    margin-bottom: 15px;
+}
+.signup-text {
+    margin-top: 70px;
+}
+
+.signup-button {
+    margin-top: 25px;
+    padding: 12px 30px;
+
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.signup-button:hover {
+    background-color: white;
+    color: #071c91;
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    max-width: 1100px;
+
+    min-height: 400px;
+
+    margin: 100px auto 0;
+
+    padding: 60px;
+
+    background-color: #071c91;
+    color: white;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.socials h3 {
+    font-size: 20px;
+}
+
+.socials a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.socials a:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 70px;
+}
+
+.footer-links h4 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.volunteer-section {
+    width: 100%;
+    max-width: none;
+    min-height: 100vh;
+    margin: 0;
+    padding: 80px 5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    text-align: center;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 100%;
+    max-width: none;
+    min-height: 280px;
+    margin: 60px 0 0;
+    padding: 55px 5%;
+
+    background-color: #10258f;
+    color: white;
+
+    box-sizing: border-box;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1.2fr 1fr;
+    gap: 45px;
+    align-items: start;
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-column h2,
+.footer-column h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-column h2 {
+    font-size: 23px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-4px);
+}
+
+@media (max-width: 700px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+}
+
+@media (max-width: 420px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+.opportunities,
+.benefits,
+.how-it-works {
+    width: 100%;
+    padding: 65px 7%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.opportunities {
+    background-color: #f2f8fc;
+    color: #10258f;
+    margin-top: 45px;
+}
+
+.opportunities h2,
+.benefits h2,
+.how-it-works h2 {
+    font-size: clamp(24px, 3vw, 34px);
+    margin-bottom: 15px;
+}
+
+.section-intro {
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+.card-icon {
+    margin-bottom: 15px;
+}
+
+.card-icon img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    display: inline-block;
+}
+.benefit-item span {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.benefit-item span img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    display: inline-block;
+}
+
+.how-it-works {
+    background-color: #10258f;
+    color: white;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    max-width: 1200px;
+    margin: 45px auto 0;
+}
+
+.step span {
+    font-size: 38px;
+    font-weight: bold;
+    color: #8bd7ff;
+}
+
+.step h3 {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.step p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    .opportunity-cards,
+    .benefit-items,
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .opportunities,
+    .benefits,
+    .how-it-works {
+        padding: 45px 6%;
+    }
+}
+.opportunity-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.benefit-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    width: 100%;
+    text-align: center;
+    background: transparent;
+}
+
+.benefit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefit-item span img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+@media (max-width: 768px) {
+    .benefit-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.opportunity-cards .card-icon img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.benefits span img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.opportunities,
+.benefits {
+    background-color: #f2f8fc;
+    color: #10258f;
+}
+.benefits {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .opportunity-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .navbar a {
+        font-size: 11px;
+    }
+
+    .hero {
+        height: 250px;
+    }
+
+    .hero-lines span {
+        width: 60px;
+    }
+
+    .introduction p {
+        font-size: 15px;
+    }
+
+    .volunteer-section {
+        min-height: 500px;
+        padding: 50px 15px;
+    }
+
+    .volunteer-section h2 {
+        font-size: 18px;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+
+    .socials {
+        flex-wrap: wrap;
+    }
+
+    .footer-links {
+        gap: 20px;
+    }
+}
