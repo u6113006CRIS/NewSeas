@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 donateBtn.addEventListener("click", function (event) {
     event.preventDefault();
-    alert("Donate button clicked!");
     donateDialog.showModal();
 });
     });
