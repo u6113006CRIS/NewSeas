@@ -685,7 +685,7 @@ footer {
 .activities {
     padding: 60px 8%;
     text-align: center;
-    background-color: #dcecf5;
+    background-color: #c8e3f2;
 }
 
 .activities h2 {
@@ -727,3 +727,4 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
