@@ -5,9 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const requirementsBtn = document.getElementById("requirementsBtn");
     const requirementsInfo = document.getElementById("requirementsInfo");
 
-    requirementsBtn.addEventListener("click", function () {
-        requirementsInfo.showModal();
-    });
+    if (requirementsBtn && requirementsInfo) {
+        requirementsBtn.addEventListener("click", function () {
+            requirementsInfo.showModal();
+        });
+    }
 
 
     // DONATION POP-UP
@@ -15,19 +17,23 @@ document.addEventListener("DOMContentLoaded", function () {
     const donateDialog = document.getElementById("donateDialog");
     const donationForm = document.getElementById("donationForm");
 
-    donateBtn.addEventListener("click", function (event) {
-        event.preventDefault();
-        donateDialog.showModal();
-    });
+    if (donateBtn && donateDialog) {
+        donateBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            donateDialog.showModal();
+        });
+    }
 
-    donationForm.addEventListener("submit", function (event) {
-        event.preventDefault();
+    if (donationForm && donateDialog) {
+        donationForm.addEventListener("submit", function (event) {
+            event.preventDefault();
 
-        alert("Thank you for supporting NewSeas!");
+            alert("Thank you for supporting NewSeas!");
 
-        donationForm.reset();
-        donateDialog.close();
-    });
+            donationForm.reset();
+            donateDialog.close();
+        });
+    }
 
 
     // SIGN UP POP-UP
@@ -35,17 +41,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const signupDialog = document.getElementById("signupDialog");
     const registrationForm = document.getElementById("registrationForm");
 
-    signupBtn.addEventListener("click", function () {
-        signupDialog.showModal();
-    });
+    if (signupBtn && signupDialog) {
+        signupBtn.addEventListener("click", function () {
+            signupDialog.showModal();
+        });
+    }
 
-    registrationForm.addEventListener("submit", function (event) {
-        event.preventDefault();
+    if (registrationForm && signupDialog) {
+        registrationForm.addEventListener("submit", function (event) {
+            event.preventDefault();
 
-        alert("Thank you for your interest in NewSeas!");
+            alert("Thank you for your interest in NewSeas!");
 
-        registrationForm.reset();
-        signupDialog.close();
-    });
+            registrationForm.reset();
+            signupDialog.close();
+        });
+    }
 
 });
+
