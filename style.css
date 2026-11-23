@@ -604,3 +604,17 @@ footer {
 #requirementsInfo::backdrop {
     background: rgba(0, 0, 0, 0.6);
 }
+
+#requirementsInfo form button {
+    background: #007f8b;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#requirementsInfo form {
+    display: block;
+}
