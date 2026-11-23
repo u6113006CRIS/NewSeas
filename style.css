@@ -554,8 +554,10 @@ footer {
     }
 
     .hero {
-        height: 250px;
-    }
+    min-height: 550px;
+    height: auto;
+    padding: 40px 20px;
+}
 
     .hero-lines span {
         width: 60px;
@@ -901,4 +903,5 @@ footer {
 .signup-dialog button:hover {
     background-color: #007f8b;
 }
+
 
