@@ -550,8 +550,9 @@ footer {
     }
 
     .navbar a {
-        font-size: 11px;
-    }
+    font-size: 12px;
+    text-align: center;
+}
 
     .hero {
     min-height: 550px;
@@ -914,6 +915,7 @@ footer {
 .signup-dialog button:hover {
     background-color: #007f8b;
 }
+
 
 
 
