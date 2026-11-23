@@ -588,14 +588,13 @@ footer {
 }
 /* Volunteer requirements pop-up */
 
-#requirementsInfo {
+#requirementsInfo[open] {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
+    inset: 0;
+    margin: auto;
     width: 90%;
     max-width: 450px;
+    height: fit-content;
     padding: 30px;
     border: none;
     border-radius: 15px;
@@ -604,8 +603,4 @@ footer {
 
 #requirementsInfo::backdrop {
     background: rgba(0, 0, 0, 0.6);
-}
-
-#requirementsInfo h2 {
-    margin-top: 0;
 }
