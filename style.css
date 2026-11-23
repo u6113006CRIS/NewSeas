@@ -562,6 +562,10 @@ footer {
     grid-template-columns: 1fr;
     gap: 15px;
 }
+    .stat {
+    width: 100%;
+    text-align: center;
+}
     .hero-lines span {
         width: 60px;
     }
@@ -590,6 +594,9 @@ footer {
     .footer-links {
         gap: 20px;
     }
+    .hero-message h1 {
+    font-size: 22px;
+    text-align: center;
 }
 /* Volunteer requirements pop-up */
 
@@ -906,6 +913,7 @@ footer {
 .signup-dialog button:hover {
     background-color: #007f8b;
 }
+
 
 
 
