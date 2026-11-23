@@ -543,10 +543,10 @@ footer {
 }
 
 @media (max-width: 768px) {
-
     .navbar {
         flex-wrap: wrap;
         gap: 15px;
+        justify-content: center;
     }
 
     .navbar a {
@@ -903,6 +903,7 @@ footer {
 .signup-dialog button:hover {
     background-color: #007f8b;
 }
+
 
 
 
