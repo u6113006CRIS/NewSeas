@@ -681,3 +681,46 @@ footer {
     font-size: 14px;
 }
 
+/* UPCOMING ACTIVITIES */
+
+.activities {
+    padding: 60px 8%;
+    text-align: center;
+    background-color: #f2f7fa;
+}
+
+.activities h2 {
+    color: #10258f;
+    margin-bottom: 35px;
+    font-size: 28px;
+}
+
+.activity-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.activity-card {
+    background-color: white;
+    color: #222;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 300px;
+    flex: 1 1 250px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    text-align: left;
+}
+
+.activity-card h3 {
+    color: #007f8b;
+    margin-bottom: 15px;
+}
+
+.activity-card p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
