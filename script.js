@@ -8,16 +8,16 @@ document.addEventListener("DOMContentLoaded", function () {
     requirementsBtn.addEventListener("click", function () {
         requirementsInfo.showModal();
     });
-    // DONATION POP-UP
 
+
+    // DONATION POP-UP
     const donateBtn = document.getElementById("donateBtn");
     const donateDialog = document.getElementById("donateDialog");
     const donationForm = document.getElementById("donationForm");
 
-donateBtn.addEventListener("click", function (event) {
-    event.preventDefault();
-    donateDialog.showModal();
-});
+    donateBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        donateDialog.showModal();
     });
 
     donationForm.addEventListener("submit", function (event) {
@@ -28,6 +28,8 @@ donateBtn.addEventListener("click", function (event) {
         donationForm.reset();
         donateDialog.close();
     });
+
+
     // SIGN UP POP-UP
     const signupBtn = document.getElementById("signupBtn");
     const signupDialog = document.getElementById("signupDialog");
