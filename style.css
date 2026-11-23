@@ -641,46 +641,95 @@ footer {
 }
 
 /* VOLUNTEER REVIEWS */
-
+/* VOLUNTEER REVIEWS */
 .reviews {
-    padding: 60px 8%;
+    padding: 60px 0;
     text-align: center;
+    background-color: #dcecf5;
+    overflow: hidden;
 }
 
 .reviews h2 {
+    color: #10258f;
+    font-size: 28px;
     margin-bottom: 35px;
 }
 
-.review-cards {
+.reviews-window {
+    width: 100%;
+    overflow: hidden;
+
+    /* Fade at both edges */
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 12%,
+        black 88%,
+        transparent 100%
+    );
+
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 12%,
+        black 88%,
+        transparent 100%
+    );
+}
+
+.reviews-track {
     display: flex;
-    justify-content: center;
+    width: max-content;
+    animation: slide-reviews 24s linear infinite;
+    animation-play-state: paused;
+}
+
+.reviews-window:hover .reviews-track {
+    animation-play-state: running;
+}
+
+.reviews-group {
+    display: flex;
     gap: 25px;
-    flex-wrap: wrap;
+    padding-right: 25px;
 }
 
 .review-card {
-    background: white;
-    color: #10258f;
+    background-color: white;
+    color: #222;
     padding: 25px;
     border-radius: 15px;
-    max-width: 300px;
-    flex: 1 1 250px;
+    width: 320px;
+    min-height: 210px;
+    flex-shrink: 0;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    text-align: left;
 }
 
 .review-card p {
     line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .review-card h3 {
+    color: #007f8b;
     margin-bottom: 5px;
 }
 
 .review-card span {
-    color: #007f8b;
-    font-size: 14px;
+    color: #666;
 }
 
+/* Continuous horizontal movement */
+@keyframes slide-reviews {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
 /* UPCOMING ACTIVITIES */
 .activities {
     padding: 60px 8%;
@@ -727,4 +776,5 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
