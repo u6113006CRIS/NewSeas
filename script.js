@@ -14,9 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const donateDialog = document.getElementById("donateDialog");
     const donationForm = document.getElementById("donationForm");
 
-    donateBtn.addEventListener("click", function (event) {
-        event.preventDefault();
-        donateDialog.showModal();
+donateBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    alert("Donate button clicked!");
+    donateDialog.showModal();
+});
     });
 
     donationForm.addEventListener("submit", function (event) {
