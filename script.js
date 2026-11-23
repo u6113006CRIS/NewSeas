@@ -9,3 +9,21 @@ document.addEventListener("DOMContentLoaded", function () {
         requirementsInfo.showModal();
     });
 });
+// SIGN UP REGISTRATION POP-UP
+
+const signupBtn = document.getElementById("signupBtn");
+const signupDialog = document.getElementById("signupDialog");
+const registrationForm = document.getElementById("registrationForm");
+
+signupBtn.addEventListener("click", function () {
+    signupDialog.showModal();
+});
+
+registrationForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    alert("Thank you for your interest in NewSeas!");
+
+    registrationForm.reset();
+    signupDialog.close();
+});
