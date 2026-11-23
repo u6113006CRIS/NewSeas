@@ -618,3 +618,24 @@ footer {
 #requirementsInfo form {
     display: block;
 }
+#requirementsInfo h2 {
+    color: #10258f;
+    margin-bottom: 20px;
+}
+
+#requirementsInfo ul {
+    color: #222;
+    text-align: left;
+    padding-left: 25px;
+    line-height: 1.8;
+}
+
+#requirementsInfo form button {
+    display: inline-block;
+    background-color: #007f8b;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 20px;
+}
