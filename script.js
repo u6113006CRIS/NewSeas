@@ -1,18 +1,15 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    console.log("NewSeas website is working!");
+    const requirementsBtn = document.getElementById("requirementsBtn");
+    const requirementsInfo = document.getElementById("requirementsInfo");
 
-    const buttons = document.querySelectorAll(".btn");
+    requirementsBtn.addEventListener("click", function () {
+        requirementsInfo.hidden = !requirementsInfo.hidden;
 
-    buttons.forEach(function (button) {
-
-        button.addEventListener("click", function () {
-
-            console.log("Button clicked!");
-
-        });
-
+        requirementsBtn.textContent = requirementsInfo.hidden
+            ? "See requirements"
+            : "Hide requirements";
     });
 
 });
