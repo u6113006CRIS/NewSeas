@@ -558,7 +558,10 @@ footer {
     height: auto;
     padding: 40px 20px;
 }
-
+.statistics {
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
     .hero-lines span {
         width: 60px;
     }
@@ -903,6 +906,7 @@ footer {
 .signup-dialog button:hover {
     background-color: #007f8b;
 }
+
 
 
 
