@@ -557,10 +557,11 @@ footer {
     min-height: 550px;
     height: auto;
     padding: 40px 20px;
-}
+    }
 .statistics {
     grid-template-columns: 1fr;
     gap: 15px;
+    padding: 20px 0;
 }
     .stat {
     width: 100%;
@@ -913,6 +914,7 @@ footer {
 .signup-dialog button:hover {
     background-color: #007f8b;
 }
+
 
 
 
