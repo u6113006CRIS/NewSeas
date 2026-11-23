@@ -682,11 +682,10 @@ footer {
 }
 
 /* UPCOMING ACTIVITIES */
-
 .activities {
     padding: 60px 8%;
     text-align: center;
-    background-color: #f2f7fa;
+    background-color: #dcecf5;
 }
 
 .activities h2 {
@@ -696,10 +695,11 @@ footer {
 }
 
 .activity-cards {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 25px;
-    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .activity-card {
@@ -707,8 +707,6 @@ footer {
     color: #222;
     padding: 25px;
     border-radius: 15px;
-    max-width: 300px;
-    flex: 1 1 250px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
     text-align: left;
 }
@@ -723,4 +721,9 @@ footer {
     margin-bottom: 10px;
 }
 
-
+/* Mobile layout */
+@media (max-width: 768px) {
+    .activity-cards {
+        grid-template-columns: 1fr;
+    }
+}
